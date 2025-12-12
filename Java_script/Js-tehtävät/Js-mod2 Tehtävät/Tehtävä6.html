@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function heitaNoppaa() {
+    return Math.floor(Math.random() * 6) + 1;
+}
+
+let tulosLista = "<ul>";
+let heitto;
+
+do {
+    heitto = heitaNoppaa();
+    tulosLista += "<li>" + heitto + "</li>";
+} while (heitto !== 6);
+
+tulosLista += "</ul>";
+document.body.innerHTML += tulosLista;
+</script>
+</body>
+</html>

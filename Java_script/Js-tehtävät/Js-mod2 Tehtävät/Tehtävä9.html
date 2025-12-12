@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function even(lukuTaulukko) {
+    const parilliset = [];
+    for (let luku of lukuTaulukko) {
+        if (luku % 2 === 0) {
+            parilliset.push(luku);
+        }
+    }
+    return parilliset;
+}
+
+const alkuperainenTaulukko = [2, 7, 4, 9, 12, 5];
+const parillinenTaulukko = even(alkuperainenTaulukko);
+
+console.log("Alkuperäinen:", alkuperainenTaulukko);
+console.log("Parilliset:", parillinenTaulukko);
+</script>
+</body>
+</html>

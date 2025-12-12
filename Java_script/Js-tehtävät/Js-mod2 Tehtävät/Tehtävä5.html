@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const uniikitLuvut = [];
+
+while (true) {
+    const luku = parseInt(prompt("Anna luku:"));
+
+    if (uniikitLuvut.includes(luku)) {
+        alert("Luku on jo annettu!");
+        break;
+    }
+
+    uniikitLuvut.push(luku);
+}
+
+uniikitLuvut.sort((a, b) => a - b);
+
+console.log("Annetut luvut:");
+console.log(uniikitLuvut);
+</script>
+
+</body>
+</html>

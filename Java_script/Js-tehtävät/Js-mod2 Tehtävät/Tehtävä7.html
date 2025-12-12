@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function heitaNoppaaTahkoilla(tahkot) {
+    return Math.floor(Math.random() * tahkot) + 1;
+}
+
+const tahkoMaara = parseInt(prompt("Kuinka monta tahkoa nopassa on?"));
+let heittoTulos;
+let peliLista = "<ul>";
+
+do {
+    heittoTulos = heitaNoppaaTahkoilla(tahkoMaara);
+    peliLista += "<li>" + heittoTulos + "</li>";
+} while (heittoTulos !== tahkoMaara);
+
+peliLista += "</ul>";
+document.body.innerHTML += peliLista;
+</script>
+</body>
+</html>

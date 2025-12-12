@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const numerot = [];
+let syote;
+
+do {
+    syote = parseInt(prompt("Anna luku (0 lopettaa):"));
+    if (syote !== 0) {
+        numerot.push(syote);
+    }
+} while (syote !== 0);
+
+numerot.sort((a, b) => b - a);
+
+console.log("Luvut suuruusjärjestyksessä:");
+for (let luku of numerot) {
+    console.log(luku);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function concat(merkkijonoTaulukko) {
+    let tulos = "";
+    for (let i = 0; i < merkkijonoTaulukko.length; i++) {
+        tulos += merkkijonoTaulukko[i];
+    }
+    return tulos;
+}
+
+const nimet = ["Johnny", "DeeDee", "Joey", "Marky"];
+const yhdistetty = concat(nimet);
+
+document.body.innerHTML += "<p>" + yhdistetty + "</p>";
+</script>
+</body>
+</html>
