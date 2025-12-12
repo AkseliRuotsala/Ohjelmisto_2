@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const heitot = parseInt(prompt("Kuinka monta noppaa heitetään?"));
+let summaNopat = 0;
+
+for (let i = 0; i < heitot; i++) {
+    const silmaluku = Math.floor(Math.random() * 6) + 1;
+    summaNopat += silmaluku;
+}
+
+document.body.innerHTML += "Noppien silmälukujen summa on: " + summaNopat + "<br>";
+</script>
+
+</body>
+</html>
